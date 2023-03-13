@@ -1,6 +1,6 @@
 package ru.ideaplatform.testcase;
 
-import com.azul.crs.com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import ru.ideaplatform.testcase.data.TicketsData;
 import ru.ideaplatform.testcase.filter.FilterResolver;
 import ru.ideaplatform.testcase.filter.filterImpl.NinetyPercentileFlightTimeVVOAndTLVFilter;
@@ -16,7 +16,7 @@ public class TicketsCalculator {
         ObjectMapper mapper = new ObjectMapper();
 
         TicketsData ticketsData =
-                mapper.readValue(new File("src/main/resources/tickets.json"), TicketsData.class);
+                mapper.readValue(new File(args[0]), TicketsData.class);
 
         // #1 - среднее время полета между городами Владивосток и Тель-Авив
         Duration avgTimeBetweenVVOAndTLV =

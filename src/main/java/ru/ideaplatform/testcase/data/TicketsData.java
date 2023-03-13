@@ -1,6 +1,7 @@
 package ru.ideaplatform.testcase.data;
 
-import com.azul.crs.com.fasterxml.jackson.annotation.JsonProperty;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
