@@ -1,5 +1,5 @@
 # TicketsCalculator
-Test task for Java junior position in Idea Platform company
+Тестовое задание на позицию Java-разработчика в Idea Platform
 
 ## Задание
 Программа на языке Java, которая читает файл tickets.json и рассчитает:
